@@ -9,3 +9,6 @@ Business Rules:
   4. Ratings are optional.
   5. There must be at least 10 restaurants in the database.
   6. Individual orders must come from one restaurant.
+  
+  EERD: 
+![Screenshot (117)](https://user-images.githubusercontent.com/81537371/113422289-6691a600-939a-11eb-81cd-fcdd52847a21.png)
