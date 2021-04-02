@@ -11,4 +11,5 @@ Business Rules:
   6. Individual orders must come from one restaurant.
   
   EERD: 
+  
 ![Screenshot (117)](https://user-images.githubusercontent.com/81537371/113422289-6691a600-939a-11eb-81cd-fcdd52847a21.png)
