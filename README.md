@@ -11,7 +11,8 @@ Business Rules:
   6. Individual orders must come from one restaurant.
 
 Use Case: 
-  *STILL NEEDS TO BE DONE*
+ ![Lan's Diagram - Use case diagram](https://user-images.githubusercontent.com/81499842/113467103-d2155b00-940e-11eb-8ea9-4ecb49c5d0e0.jpeg)
+
 
 EERD: 
   
