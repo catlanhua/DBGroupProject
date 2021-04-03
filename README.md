@@ -2,7 +2,7 @@
 
 Introduction: Hi! We are group 9 and in this project we will be working with the Campus Eats Script in MySQL WorkBench. The members of our group are: Madison Miller, Lan Hua, Samuel King, Nicholas Huy, and Avery Metcalf.
 
-Project Description: COVID-19 has created an increasing demand of a reliable online food delivery service on campus. The current campus-controlled delivery system, however, does not have a system to evaluate the reliability of its drivers and vendors. Thus, this project aims to improve the current database by introducing a rating system so that drivers’ performance, restaurants’ food quality, and students’ dietary habits can be tracked and analyzed.
+Project Description: COVID-19 has created an increasing demand of a reliable online food delivery service on campus. The current campus-controlled delivery system, however, does not have a system to evaluate the reliability of its drivers and vendors. Thus, this project aims to improve the current database by introducing a rating system to track and analyze drivers’ performance, restaurants’ food quality, and students’ dietary habits. Such data will be valueable to gain insights from what benefits the business and the students so impactful changes can be made. 
 
 Business Rules: 
   1. Only students can be drivers.
