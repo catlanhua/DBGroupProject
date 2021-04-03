@@ -13,6 +13,9 @@ Business Rules:
   6. Individual orders must come from one restaurant.
 
 Use Case: 
+The customer will be able to view ratings and submit ratings.
+The administrator will be able to view the customer's ratings, maintain the ratings and view the reports analyzing the data.
+
  ![Lan's Diagram - Use case diagram](https://user-images.githubusercontent.com/81499842/113467103-d2155b00-940e-11eb-8ea9-4ecb49c5d0e0.jpeg)
 
 
