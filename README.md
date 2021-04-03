@@ -31,3 +31,4 @@ Data Dictionary:
 UML Diagram:
 ![Screenshot (118)](https://github.com/lazylizardz/DBGroupProject/blob/main/Deliverable_UML_Final.png)
 
+https://github.com/lazylizardz/DBGroupProject/blob/main/Deliverable_UML_Final.xml
