@@ -28,3 +28,6 @@ Data Dictionary:
 
 [Deliverable 2 - Data Dictionary - Sheet1.pdf](https://github.com/lazylizardz/DBGroupProject/files/6249865/Deliverable.2.-.Data.Dictionary.-.Sheet1.pdf)
 
+UML Diagram:
+https://github.com/lazylizardz/DBGroupProject/blob/main/Deliverable_UML_Final.png
+
