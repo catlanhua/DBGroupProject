@@ -19,9 +19,10 @@ The administrator will be able to view the customer's ratings, maintain the rati
  ![Lan's Diagram - Use case diagram](https://user-images.githubusercontent.com/81499842/113467103-d2155b00-940e-11eb-8ea9-4ecb49c5d0e0.jpeg)
 
 
-EERD: 
+EERD: (with rating supertype table and restaurant_rating, delivery_rating as subtype table)
   
-![Screenshot (117)](https://user-images.githubusercontent.com/81537371/113422289-6691a600-939a-11eb-81cd-fcdd52847a21.png)
+![eerd_updated](https://user-images.githubusercontent.com/81499842/114309552-8cfbc380-9ab5-11eb-99bd-506b0b226a59.PNG)
+
 
 
 Data Dictionary:
