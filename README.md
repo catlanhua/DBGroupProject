@@ -26,44 +26,13 @@ EERD: (with rating supertype table and restaurant_rating, delivery_rating as sub
 
 SQL Script: 
 1) Creating the rating tables
+![ratingcreation](https://user-images.githubusercontent.com/81499842/116006220-307dc580-a5d8-11eb-9990-a261f3d9f36a.PNG)
 
-CREATE TABLE `rating` (
-  `rating_id` int(11) NOT NULL AUTO_INCREMENT,
-  `overall_rating` int(11) DEFAULT NULL,
-  `order_id` int(11) NOT NULL,
-  PRIMARY KEY (`rating_id`),
-  KEY `fk_order_id` (`order_id`),
-  CONSTRAINT `fk_order_id` FOREIGN KEY (`order_id`) REFERENCES `order` (`order_id`)
-  );
-  CREATE TABLE `restaurant_rating` (
-  `rating_id` int(11) NOT NULL REFERENCES rating(`rating_id`),
-  `food_rating` int(11) DEFAULT NULL,
-  `price_rating` int(11) NOT NULL,
-  PRIMARY KEY(`rating_id`),
-  CONSTRAINT `fk_rating_id` FOREIGN KEY (`rating_id`) REFERENCES `rating` (`rating_id`)
-  );
-  CREATE TABLE `delivery_rating` (
-  `rating_id` int(11) NOT NULL REFERENCES rating(`rating_id`),
-  `on_time` int(11) DEFAULT NULL,
-  `courteous` int(11) NOT NULL,
-  PRIMARY KEY(`rating_id`),
-   CONSTRAINT `fk_rating_id2` FOREIGN KEY (`rating_id`) REFERENCES `rating` (`rating_id`)
-  )
-ENGINE=InnoDB AUTO_INCREMENT=152 DEFAULT CHARSET=latin1;
 
 2) Stored Procedure for getting the Average Rating from a restaurant
 ![avg_restaurant](https://user-images.githubusercontent.com/81499842/116006117-e694df80-a5d7-11eb-8ded-b1b884938a37.PNG)
 
--- Create a SP  AVG_RESTAURANT to return the Avg Restaurant rating for a particular restaurant
-DELIMITER $$
-CREATE PROCEDURE avg_restaurant(IN RestaurantID INT, OUT outavgRest decimal(2, 1))
-BEGIN
-	DECLARE theAVGInfo DECIMAL(2, 1) ;
-    SET theAVGInfo= (SELECT AVG(Ratings.Overall_rating) FROM Ratings
-	INNER JOIN orders ON rating.order_id = orders.order_id
-    WHERE orders.restaurant_id = RestaurantID) ;
-	SET outavgRest= theAVGInfo ;
-END $$
+
 Data Dictionary:
 
 [Deliverable 2 - Data Dictionary - Sheet1.pdf](https://github.com/lazylizardz/DBGroupProject/files/6249865/Deliverable.2.-.Data.Dictionary.-.Sheet1.pdf)
