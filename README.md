@@ -26,6 +26,7 @@ EERD: (with rating supertype table and restaurant_rating, delivery_rating as sub
 
 SQL Script: 
 1) Creating the rating tables
+
 CREATE TABLE `rating` (
   `rating_id` int(11) NOT NULL AUTO_INCREMENT,
   `overall_rating` int(11) DEFAULT NULL,
@@ -51,6 +52,8 @@ CREATE TABLE `rating` (
 ENGINE=InnoDB AUTO_INCREMENT=152 DEFAULT CHARSET=latin1;
 
 2) Stored Procedure for getting the Average Rating from a restaurant
+![avg_restaurant](https://user-images.githubusercontent.com/81499842/116006117-e694df80-a5d7-11eb-8ded-b1b884938a37.PNG)
+
 -- Create a SP  AVG_RESTAURANT to return the Avg Restaurant rating for a particular restaurant
 DELIMITER $$
 CREATE PROCEDURE avg_restaurant(IN RestaurantID INT, OUT outavgRest decimal(2, 1))
