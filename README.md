@@ -31,7 +31,8 @@ SQL Script:
 
 2) Stored Procedure for getting the Average Rating from a restaurant
 ![avg_restaurant](https://user-images.githubusercontent.com/81499842/116006117-e694df80-a5d7-11eb-8ded-b1b884938a37.PNG)
-
+Calling the avg_restaurant Stored Procedure for restaurant_id 1
+![avg_restaurant_spcall](https://user-images.githubusercontent.com/81499842/116006350-ce719000-a5d8-11eb-9aa9-a8f682e58e10.PNG)
 
 Data Dictionary:
 
