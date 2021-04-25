@@ -23,8 +23,9 @@ EERD: (with rating supertype table and restaurant_rating, delivery_rating as sub
   
 ![eerd_updated](https://user-images.githubusercontent.com/81499842/114309552-8cfbc380-9ab5-11eb-99bd-506b0b226a59.PNG)
 
-SQL Script: 
 
+SQL Script: 
+1) Creating the rating tables
 CREATE TABLE `rating` (
   `rating_id` int(11) NOT NULL AUTO_INCREMENT,
   `overall_rating` int(11) DEFAULT NULL,
@@ -49,6 +50,17 @@ CREATE TABLE `rating` (
   )
 ENGINE=InnoDB AUTO_INCREMENT=152 DEFAULT CHARSET=latin1;
 
+2) Stored Procedure for getting the Average Rating from a restaurant
+-- Create a SP  AVG_RESTAURANT to return the Avg Restaurant rating for a particular restaurant
+DELIMITER $$
+CREATE PROCEDURE avg_restaurant(IN RestaurantID INT, OUT outavgRest decimal(2, 1))
+BEGIN
+	DECLARE theAVGInfo DECIMAL(2, 1) ;
+    SET theAVGInfo= (SELECT AVG(Ratings.Overall_rating) FROM Ratings
+	INNER JOIN orders ON rating.order_id = orders.order_id
+    WHERE orders.restaurant_id = RestaurantID) ;
+	SET outavgRest= theAVGInfo ;
+END $$
 Data Dictionary:
 
 [Deliverable 2 - Data Dictionary - Sheet1.pdf](https://github.com/lazylizardz/DBGroupProject/files/6249865/Deliverable.2.-.Data.Dictionary.-.Sheet1.pdf)
